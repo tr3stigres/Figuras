@@ -13,6 +13,6 @@
     }
 
     public override double CalcularArea()
-    => Math.PI * RadioCirculo * RadioCirculo;
+    => Math.PI * Math.Pow (RadioCirculo, 2);
 
 }
