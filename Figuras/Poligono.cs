@@ -7,5 +7,7 @@
     {
         NumLados = nLados;
     }
-    
+
+    public override double CalcularArea()
+        => 0;
 }

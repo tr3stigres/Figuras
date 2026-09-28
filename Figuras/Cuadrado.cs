@@ -6,4 +6,7 @@
 
     }
 
+    public override double CalcularArea()
+        => Lado1 * Lado1;
+
 }

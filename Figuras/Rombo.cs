@@ -1,9 +1,12 @@
 ﻿public class Rombo : Paralelogramo
 {
     
-    public Rombo(double lado, double gr1, double gr2) : base(lado, lado, gr1, gr2, "Rombo")
+    public Rombo(double lado, double gr1) : base(lado, lado, gr1, gr1, "Rombo")
     {
 
     }
+
+    public override double CalcularArea()
+           => Lado1 * Lado2 * Math.Sin(Grado1 * Math.PI / 180);
 
 }

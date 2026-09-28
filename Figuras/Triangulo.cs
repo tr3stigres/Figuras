@@ -14,4 +14,11 @@
     {
         return $"Figura: {NomFigura}, Lados: {Lado1}, {Lado2}, {Lado3}";
     }
+
+    public override double CalcularArea()
+    { 
+        double semiperímetro = (Lado1 + Lado2 + Lado3) / 2;
+        return Math.Sqrt(semiperímetro * (semiperímetro - Lado1) * (semiperímetro - Lado2) * (semiperímetro - Lado3));
+    }
+    
 }

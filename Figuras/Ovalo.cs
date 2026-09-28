@@ -14,4 +14,6 @@
         return $"Figura: {NomFigura}, Radio: {Radio1},  Radio: {Radio2}";
     }
 
+    public override double CalcularArea()
+    => Math.PI * Radio1 * Radio2;
 }

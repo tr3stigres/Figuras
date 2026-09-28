@@ -17,4 +17,7 @@
     {
         return $"Figura: {NomFigura}, Lados: {Lado1}, {Lado2} Grados: {Grado1}, {Grado2}";
     }
+
+    public override double CalcularArea()
+        => Lado1 * Lado2 * Math.Sin(Grado1 * Math.PI / 180);
 }
